@@ -1,0 +1,196 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ddd;
+	padding: 50px 0;
+}
+.funnel {
+	background-color: #FFF;
+	overflow: hidden;
+	padding: 30px;
+}
+
+/* features */
+.features {
+	margin-top: 30px;
+}
+.features ul {
+	list-style: none;
+}
+.features ul li {
+	color: #E17000;
+	text-decoration: none;
+	font-size: 18px;
+}
+.features ul li a:hover {
+	color: #ddd;
+}
+.features ul li:before {
+	content: "\0BB \020";
+	color: #E17000;
+	font-size: 20px;
+}
+ 
+ /* forms */
+ 
+.spiked-title {
+    position: relative;
+    text-transform: uppercase;
+    width: 90%;
+    max-width: 500px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .5em 1em;
+    overflow: visible;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0 0 20px;
+	font-size: 20px;
+}
+.spiked-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -45px;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 41px solid transparent;
+}
+ .spiked-title.grey {
+    background-color: #1d3035;
+    color: #fff;
+}
+.spiked-title.grey:after {
+    border-left: 45px solid #1d3035;
+}
+
+/* form group */
+.form-group label{
+    font-size: 14px;
+    text-transform: uppercase;
+	display: none;
+}
+.form-control {
+    padding: 20px;
+	border-radius: 0px;
+	font-size: 17px;
+}
+
+/* checkbox */
+input[type=checkbox]:focus {
+	outline: 0 !important;
+}
+.custom-checkbox { 
+	position: relative;
+	margin-bottom: 12px;
+ }
+
+.custom-checkbox input {
+	position: absolute;
+	left: 2px;
+	top: 3px;
+	margin: 0;
+	z-index: 0;
+	margin-left: 0 !important;
+	outline: 0;
+}
+
+.custom-checkbox label {
+	display: block;
+	position: relative;
+	z-index: 1;
+	font-size: 1.3em;
+	padding-right: 1em;
+	line-height: 1;
+    padding: 3px 0 0 31px;
+	margin: 0 0 .3em;
+	cursor: pointer;
+	outline: 0;
+}
+
+	
+/* states */
+.custom-checkbox label { background: url(../img/checkbox.gif) no-repeat; }
+
+.custom-checkbox label {
+	background-position: -10px -14px;
+}
+
+.custom-checkbox label.hover,
+.custom-checkbox label.focus {
+	background-position: -10px -114px;
+}
+
+.custom-checkbox label.checked {
+	background-position: -10px -214px;
+}
+
+.custom-checkbox label.checkedHover, 
+.custom-checkbox label.checkedFocus {
+	background-position: -10px -314px;
+}
+
+.custom-checkbox label.focus {
+	outline: 1px dotted #ccc;
+}
+
+/* button */
+.yellow.button {
+    background-color: #ffb515;
+}
+.yellow.button:hover {
+    background-color: #fc9200;
+}
+.large.button {
+    font-size: 16px;
+    padding: 9px 19px 11px;
+}
+
+.button {
+	border: 0;
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+    width: 200px;
+    padding: 5px 15px 6px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    margin-right: 2em;
+    background: #222;
+    color: #fff!important;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+	    box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset !important;
+    -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+}
+
+@media only screen and (max-width: 470px) {
+	.features ul {
+		padding: 0;
+		margin-bottom: 50px;
+	}
+}
+
+
+.success{
+	background: #D8FFC0;
+	padding: 5px 10px 5px 10px;
+	margin: 0px 0px 5px 0px;
+	border: none;
+	font-weight: bold;
+	color: #2E6800;
+	border-left: 3px solid #2E6800;
+}
+.error {
+	background: #FFE8E8;
+	padding: 5px 10px 5px 10px;
+	margin: 0px 0px 5px 0px;
+	border: none;
+	font-weight: bold;
+	color: #FF0000;
+	border-left: 3px solid #FF0000;
+}
